@@ -5,60 +5,83 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Satoshi Nakamoto</title>
-        <style>
-        @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+    <style>
         * {
-            margin: 0;
-            padding: 0;
-        }
-        body {
-            background-color: silver;
-            font-family: 'Titillium Web', sans-serif;
-        }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
 
-        #main {
-            max-width: 90%;
-            text-align: center;
-            background-color: #fff;
-            margin: auto;
-        }
+body {
+  color: #F2F2F4;
+  background: linear-gradient(
+    75deg, #1b1b32 50%, #3b3b78 100%);
+    font-family: sans-serif;
+}
 
-        li {
-            list-style: none;
-        }
-        h1, h2 {
-            font-family: 'Bebas Neue', sans-serif;
-            text-transform: uppercase;
-            font-size: 2rem;
-        }
-        .one {
-            line-height: 20px;
-            padding: 20px 0;
-        }
-        #img-caption {
-            padding-bottom: 20px;
-        }
+#main {
+  min-width: 300px;
+  max-width: 750px;
+  margin: 15px auto 30px;
+}
 
-        #image {
-            max-width: 100%;
-            display: block;
-            margin: auto;
-        }
-        #tribute-link {
-            text-decoration: none;
-        }
-    </style>
+.one h1, .one p {
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 800;
+  font-variant: small-caps;
+}
+
+.one p {
+  margin-top: -2rem;
+  font-size: 1.1rem;
+}
+
+.one h1 {
+  font-size: 2rem;
+}
+
+#image {
+  display: block;
+  margin: 0 auto;
+  min-width: 200px;
+  border-radius: 12px;
+  box-shadow: 0 0 5pc 0 #f2f3f4;
+  max-width: 100%;
+}
+
+#img-caption {
+  text-align: center;
+  font-style: italic;
+  padding-bottom: 1.2rem;
+}
+
+#tribute-info li {
+  list-style: none;
+  padding-bottom: 10px;
+  text-align: justify;
+}
+
+p a {
+  text-decoration: none;
+  color: #fa4445;
+}
+p:last-of-type {
+  text-align: center;
+  padding-top: 10px;
+}
+    </style>  
 </head>
 <body>
     <main id="main">
         <div class='one'>
-            <h1 id="title">satoshi nakamoto</h1>
+            <h1 id="title">Satoshi Nakamoto</h1>
             <p>Father of Crypto</p>
         </div>
-        <div id="img-caption">
+        <div id="img-div">
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Bust_of_Satoshi_Nakamoto_in_Budapest.jpg/220px-Bust_of_Satoshi_Nakamoto_in_Budapest.jpg" alt="image of Satoshi in Budapest" id="image">
-            <p id="img-caption">A statue in Budapest dedicated to Satoshi Nakamoto</p>
+            <figcaption id="img-caption">A statue in Budapest dedicated to Satoshi Nakamoto</figcaption>
         </div>
 
         <section id="tribute-info">
@@ -85,7 +108,7 @@
                 <li>Nakamoto owns between 750,000 and 1,100,000 bitcoin. In November 2021, when bitcoin hit its still-highest value of over US$68,000, that would have made his net worth up to US$73 billion, which would have made him the 15th-richest person in the world at the time.</li>
             </ul>
         </section>
-        <a href="https://fortune.com/2015/12/09/bitcoin-satoshi-identity/" target="_blank" id="tribute-link">Who is Satoshi Nakamoto, Inventor of Bitcoin? It Doesn't Matter.</a>
+        <p>Who is <a href="https://fortune.com/2015/12/09/bitcoin-satoshi-identity/" target="_blank" id="tribute-link">Satoshi Nakamoto</a>, Inventor of Bitcoin? It Doesn't Matter.</p>
     </main>
 </body>
 </html>
